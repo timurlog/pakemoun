@@ -18,5 +18,6 @@ export function ftStopSelectThemeSfx() {
 
 export function ftRoadThemeSfx() {
     roadThemeSfx.volume = '0.5';
+    selectThemeSfx.loop = true;
     roadThemeSfx.play();
 }
