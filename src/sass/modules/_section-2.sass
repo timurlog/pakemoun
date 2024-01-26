@@ -24,6 +24,7 @@
                 justify-content: center
                 align-items: center
                 gap: 40px
+                transition: all 0.5s ease
                 p
                     color: #FFF
                     font-size: 50px
@@ -79,3 +80,25 @@
                     box-shadow: 0px 2px 0px #9E0024
                     position: relative
                     top: 2px
+
+.screen-top-anim
+    animation: bgFade 0.5s forwards
+@keyframes bgFade
+    0%
+        background-image: linear-gradient(rgba(56, 56, 56, 0.8), rgba(24, 24, 24, 0.8)), url('../assets/image/bg/road-bg.png')
+    12.5%
+        background-image: linear-gradient(rgba(56, 56, 56, 0.7), rgba(24, 24, 24, 0.7)), url('../assets/image/bg/road-bg.png')
+    25%
+        background-image: linear-gradient(rgba(56, 56, 56, 0.6), rgba(24, 24, 24, 0.6)), url('../assets/image/bg/road-bg.png')
+    37.5%
+        background-image: linear-gradient(rgba(56, 56, 56, 0.5), rgba(24, 24, 24, 0.5)), url('../assets/image/bg/road-bg.png')
+    50%
+        background-image: linear-gradient(rgba(56, 56, 56, 0.4), rgba(24, 24, 24, 0.4)), url('../assets/image/bg/road-bg.png')
+    62.5%
+        background-image: linear-gradient(rgba(56, 56, 56, 0.3), rgba(24, 24, 24, 0.3)), url('../assets/image/bg/road-bg.png')
+    75%
+        background-image: linear-gradient(rgba(56, 56, 56, 0.2), rgba(24, 24, 24, 0.2)), url('../assets/image/bg/road-bg.png')
+    87.5%
+        background-image: linear-gradient(rgba(56, 56, 56, 0.1), rgba(24, 24, 24, 0.1)), url('../assets/image/bg/road-bg.png')
+    100%
+        background-image: linear-gradient(rgba(56, 56, 56, 0), rgba(24, 24, 24, 0.0)), url('../assets/image/bg/road-bg.png')

@@ -14,17 +14,17 @@ export function movePlayer(evt) {
             if (element.style.left == '690px') {
                 return
             }
-            move('left', -5);
+            move('left', -10);
             if (i == true) {
                 element.setAttribute('src', './public/assets/image/player/player-walk-left.gif');
                 i = false
             }
             break;
         case 68:
-            if (element.style.left == '1145px') {
+            if (element.style.left == '1140px') {
                 return
             }
-            move('left', 5);
+            move('left', 10);
             if (i == true) {
                 element.setAttribute('src', './public/assets/image/player/player-walk-right.gif');
                 i = false
@@ -34,7 +34,7 @@ export function movePlayer(evt) {
             if (element.style.top == '150px') {
                 return
             }
-            move('top', -5);
+            move('top', -10);
             if (i == true) {
                 element.setAttribute('src', './public/assets/image/player/player-walk-front.gif');
                 i = false
@@ -44,7 +44,7 @@ export function movePlayer(evt) {
             if (element.style.top == '470px') {
                 return
             }
-            move('top', 5);
+            move('top', 10);
             if (i == true) {
                 element.setAttribute('src', './public/assets/image/player/player-walk-back.gif');
                 i = false
