@@ -7,9 +7,9 @@ export function teamASelected() {
     teamBBtn.style.display = 'none';
     setTimeout(() => {
         teamBDisplay.style.display = 'none';
-        pokemonSelectionTextBox.innerHTML = 'You chose team "A" composed of Blaziken and Rayquaza';
+        pokemonSelectionTextBox.innerHTML = 'You chose team "A" composed of Blaziken and Rayquaza.';
         setTimeout(() => {
-            teamADisplay.style.transform = 'scaleY(0)';
+            teamADisplay.style.transform = 'scale(0)';
             pokemonSelectionTextBox.innerHTML = '';
             setTimeout(() => {
                 pokemonSelectionScreenTop.classList.add('screen-top-anim');
@@ -30,9 +30,9 @@ export function teamBSelected() {
     teamABtn.style.display = 'none';
     setTimeout(() => {
         teamADisplay.style.display = 'none';
-        pokemonSelectionTextBox.innerHTML = 'You chose team "B" composed of Gardevoir and Deoxys';
+        pokemonSelectionTextBox.innerHTML = 'You chose team "B" composed of Gardevoir and Deoxys.';
         setTimeout(() => {
-            teamBDisplay.style.transform = 'scaleY(0)';
+            teamBDisplay.style.transform = 'scale(0)';
             pokemonSelectionTextBox.innerHTML = '';
             setTimeout(() => {
                 pokemonSelectionScreenTop.classList.add('screen-top-anim');
