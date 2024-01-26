@@ -1,18 +1,45 @@
-/* ### SECTION 1 ### */
-
-
-/* ######### RESPONSIVE ######### */
-/* ### SMARTPHONE ### */
-@media (max-width: 576px)
-
-
-/* ### TABLET ### */
-@media (min-width: 577px) and (max-width: 768px)
-
-
-/* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 1024px)
-
-
-/* ### BIG DESKTOP ### */
-@media (min-width: 1025px)
+/* ### SECTION START MENU ### */
+.start-menu
+    height: 634px
+    width: 512px
+    box-shadow:  50px 50px 76px #101010, -50px -50px 76px #3e3e3e
+    .sm-content
+        display: flex
+        flex-direction: column
+        overflow: hidden
+        .screen-top
+            background-image: linear-gradient(rgba(56, 56, 56, 0.8), rgba(24, 24, 24, 0.8)), url('../assets/image/bg/road-bg.png')
+            background-repeat: no-repeat
+            background-size: 100%
+            width: 100%
+            height: 384px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            position: relative
+            h1
+                color: #FFF
+                font-size: 50px
+        .screen-bot
+            background-image: url('../assets/image/bg/screen-bot-bg.png')
+            height: 250px
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            button
+                font-family: "retro-gaming"
+                cursor: pointer
+                color: #ecf0f1
+                font-size: 17px
+                background-color: #B50029
+                border: 1px solid #C8405F
+                border-radius: 5px
+                padding: 15px 30px
+                box-shadow: 0px 6px 0px #9E0024
+                transition: all 0.1s
+            button:active
+                box-shadow: 0px 2px 0px #9E0024
+                position: relative
+                top: 2px
