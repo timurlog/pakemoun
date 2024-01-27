@@ -18,6 +18,10 @@ export let playerMoveScreenTop = document.querySelector('.player-move .screen-to
 
 // FIGHT TRANSITION
 export let fightTransition = document.querySelector('.fight-transition');
+export let enemyLT = document.querySelector('#enemyLT');
+export let enemyRT = document.querySelector('#enemyRT');
+export let playerLT = document.querySelector('#playerLT');
+export let playerRT = document.querySelector('#playerRT');
 
 // FIGHT GAMEPLAY
 export let fightGameplay = document.querySelector('.fight-gameplay');

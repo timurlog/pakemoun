@@ -1,4 +1,4 @@
-import { playerMove, pokemonSelection, pokemonSelectionScreenTop, pokemonSelectionTextBox, teamABtn, teamADisplay, teamBBtn, teamBDisplay } from "./instance.js";
+import { enemyLT, enemyRT, playerLT, playerMove, playerRT, pokemonSelection, pokemonSelectionScreenTop, pokemonSelectionTextBox, teamABtn, teamADisplay, teamBBtn, teamBDisplay } from "./instance.js";
 import { ftRoadThemeSfx, ftStopSelectThemeSfx } from "./sound.js";
 
 export function teamASelected() {
@@ -25,6 +25,10 @@ export function teamASelected() {
 }
 
 export function teamBSelected() {
+    enemyLT.setAttribute('src', './public/assets/image/pokemon/blaziken-front.gif');
+    enemyRT.setAttribute('src', './public/assets/image/pokemon/rayquaza-front.gif');
+    playerLT.setAttribute('src', './public/assets/image/pokemon/deoxys-back.gif');
+    playerRT.setAttribute('src', './public/assets/image/pokemon/gardevoir-back.gif');
     teamADisplay.style.transform = 'scaleY(0)';
     teamBBtn.style.display = 'none';
     teamABtn.style.display = 'none';
