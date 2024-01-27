@@ -417,15 +417,166 @@ main {
   overflow: hidden;
 }
 .fight-gameplay .fg-content .screen-top {
-  background-image: url("../assets/image/arena/arena-18.png");
+  background-image: url("../assets/image/arena/arena-10.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
   height: 384px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+.fight-gameplay .fg-content .screen-top .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 276px;
+  height: 100%;
+}
+.fight-gameplay .fg-content .screen-top .left .player-pokemon-content {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.fight-gameplay .fg-content .screen-top .left .player-pokemon-content img {
+  height: 230px;
+  margin-bottom: 10px;
+}
+.fight-gameplay .fg-content .screen-top .left .enemy-info-bar {
+  margin-bottom: 35px;
+  width: 85%;
+  height: 40px;
+}
+.fight-gameplay .fg-content .screen-top .left .enemy-info-bar .enemy-pokemon-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+.fight-gameplay .fg-content .screen-top .left .enemy-info-bar .enemy-pokemon-info p {
+  color: #FFF;
+  font-size: 22px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.fight-gameplay .fg-content .screen-top .left .enemy-info-bar .enemy-pokemon-info span {
+  color: #c48b4f;
+  font-size: 14px;
+}
+.fight-gameplay .fg-content .screen-top .left .enemy-info-bar .enemy-pv-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 3px;
+  width: 100%;
+  height: 13px;
+  background: #FEFEFE;
+  border-right: 2px #211A10 solid;
+  border-bottom: 3px #211A10 solid;
+}
+.fight-gameplay .fg-content .screen-top .left .enemy-info-bar .enemy-pv-info p {
+  font-size: 13px;
+  color: #1ebe41;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.fight-gameplay .fg-content .screen-top .left .enemy-info-bar .enemy-pv-info .enemy-pv-bar-content {
+  height: 10px;
+  width: 100px;
+  border-radius: 20px;
+  background: #E3E3E4;
+  border: 1px #211A10 solid;
+  overflow: hidden;
+}
+.fight-gameplay .fg-content .screen-top .left .enemy-info-bar .enemy-pv-info .enemy-pv-bar-content .enemy-pv-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #1ebe41;
+}
+.fight-gameplay .fg-content .screen-top .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 236px;
+  height: 100%;
+}
+.fight-gameplay .fg-content .screen-top .right .enemy-pokemon-content {
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.fight-gameplay .fg-content .screen-top .right .enemy-pokemon-content img {
+  height: 135px;
+  margin-bottom: 10px;
+}
+.fight-gameplay .fg-content .screen-top .right .player-info-bar {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.fight-gameplay .fg-content .screen-top .right .player-info-bar .player-pokemon-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+.fight-gameplay .fg-content .screen-top .right .player-info-bar .player-pokemon-info p {
+  color: #FFF;
+  font-size: 22px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.fight-gameplay .fg-content .screen-top .right .player-info-bar .player-pokemon-info span {
+  color: #c48b4f;
+  font-size: 14px;
+}
+.fight-gameplay .fg-content .screen-top .right .player-info-bar .player-pv-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 3px;
+  width: 100%;
+  height: 13px;
+  background: #FEFEFE;
+  border-left: 2px #211A10 solid;
+  border-bottom: 3px #211A10 solid;
+}
+.fight-gameplay .fg-content .screen-top .right .player-info-bar .player-pv-info p {
+  font-size: 13px;
+  color: #1ebe41;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.fight-gameplay .fg-content .screen-top .right .player-info-bar .player-pv-info .player-pv-bar-content {
+  height: 10px;
+  width: 100px;
+  border-radius: 20px;
+  background: #E3E3E4;
+  border: 1px #211A10 solid;
+  overflow: hidden;
+}
+.fight-gameplay .fg-content .screen-top .right .player-info-bar .player-pv-info .player-pv-bar-content .player-pv-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #1ebe41;
+}
+.fight-gameplay .fg-content .screen-top .right .player-info-bar .player-pv-text {
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(45, 48, 47) 10%);
+  margin-left: 30px;
+}
+.fight-gameplay .fg-content .screen-top .right .player-info-bar .player-pv-text p {
+  font-size: 16px;
+  color: #FFF;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 .fight-gameplay .fg-content .screen-bot {
   background-image: url("../assets/image/bg/screen-bot-bg.png");

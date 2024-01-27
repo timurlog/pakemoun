@@ -25,9 +25,32 @@ export let playerRT = document.querySelector('#playerRT');
 
 // FIGHT GAMEPLAY
 export let fightGameplay = document.querySelector('.fight-gameplay');
+export let fightGameplayScreenTop = document.querySelector('.fight-gameplay .screen-top');
 
 // SFX
 export let buttonSfx = new Audio('./public/assets/music/sfx/button.wav');
 export let selectThemeSfx = new Audio('./public/assets/music/sfx/select-menu-theme.wav');
 export let roadThemeSfx = new Audio('./public/assets/music/sfx/road-music-theme.wav');
 export let battleThemeSfx = new Audio('./public/assets/music/sfx/battle-music-theme.wav');
+
+// ARENA
+export let arenaArray = [
+    "url('./public/assets/image/arena/arena-01.png')",
+    "url('./public/assets/image/arena/arena-02.png')",
+    "url('./public/assets/image/arena/arena-03.png')",
+    "url('./public/assets/image/arena/arena-04.png')",
+    "url('./public/assets/image/arena/arena-05.png')",
+    "url('./public/assets/image/arena/arena-06.png')",
+    "url('./public/assets/image/arena/arena-07.png')",
+    "url('./public/assets/image/arena/arena-08.png')",
+    "url('./public/assets/image/arena/arena-09.png')",
+    "url('./public/assets/image/arena/arena-10.png')",
+    "url('./public/assets/image/arena/arena-11.png')",
+    "url('./public/assets/image/arena/arena-12.png')",
+    "url('./public/assets/image/arena/arena-13.png')",
+    "url('./public/assets/image/arena/arena-14.png')",
+    "url('./public/assets/image/arena/arena-15.png')",
+    "url('./public/assets/image/arena/arena-16.png')",
+    "url('./public/assets/image/arena/arena-17.png')",
+    "url('./public/assets/image/arena/arena-18.png')"
+]

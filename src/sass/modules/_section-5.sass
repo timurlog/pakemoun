@@ -9,15 +9,142 @@
         flex-direction: column
         overflow: hidden
         .screen-top
-            background-image: url('../assets/image/arena/arena-18.png')
+            background-image: url('../assets/image/arena/arena-10.png')
             background-repeat: no-repeat
             background-size: 100%
             width: 100%
             height: 384px
             display: flex
-            flex-direction: column
-            justify-content: space-around
+            justify-content: space-between
             align-items: center
+            .left
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+                width: 276px
+                height: 100%
+                .player-pokemon-content
+                    height: 250px
+                    display: flex
+                    justify-content: center
+                    align-items: flex-end
+                    img
+                        height: 230px
+                        margin-bottom: 10px
+                .enemy-info-bar
+                    margin-bottom: 35px
+                    width: 85%
+                    height: 40px
+                    .enemy-pokemon-info
+                        display: flex
+                        justify-content: space-evenly
+                        p
+                            color: #FFF
+                            font-size: 22px
+                            -webkit-text-stroke-width: 1px
+                            -webkit-text-stroke-color: black
+                        span
+                            color: #c48b4f
+                            font-size: 14px
+                    .enemy-pv-info
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        gap: 6px
+                        margin-top: 3px
+                        width: 100%
+                        height: 13px
+                        background: #FEFEFE
+                        border-right: 2px #211A10 solid
+                        border-bottom: 3px #211A10 solid
+                        p
+                            font-size: 13px
+                            color: #1ebe41
+                            -webkit-text-stroke-width: 1px
+                            -webkit-text-stroke-color: black
+                        .enemy-pv-bar-content
+                            height: 10px
+                            width: 100px
+                            border-radius: 20px
+                            background: #E3E3E4
+                            border: 1px #211A10 solid
+                            overflow: hidden
+                            .enemy-pv-bar
+                                width: 100%
+                                height: 100%
+                                border-radius: 20px
+                                background: #1ebe41
+            .right
+                display: flex
+                flex-direction: column
+                justify-content: left
+                width: 236px
+                height: 100%
+                .enemy-pokemon-content
+                    height: 210px
+                    display: flex
+                    justify-content: center
+                    align-items: flex-end
+                    img
+                        height: 135px
+                        margin-bottom: 10px
+                .player-info-bar
+                    margin-top: 20px
+                    width: 100%
+                    height: 50px
+                    display: flex
+                    flex-direction: column
+                    .player-pokemon-info
+                        display: flex
+                        justify-content: space-evenly
+                        p
+                            color: #FFF
+                            font-size: 22px
+                            -webkit-text-stroke-width: 1px
+                            -webkit-text-stroke-color: black
+                        span
+                            color: #c48b4f
+                            font-size: 14px
+                    .player-pv-info
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        gap: 6px
+                        margin-top: 3px
+                        width: 100%
+                        height: 13px
+                        background: #FEFEFE
+                        border-left: 2px #211A10 solid
+                        border-bottom: 3px #211A10 solid
+                        p
+                            font-size: 13px
+                            color: #1ebe41
+                            -webkit-text-stroke-width: 1px
+                            -webkit-text-stroke-color: black
+                        .player-pv-bar-content
+                            height: 10px
+                            width: 100px
+                            border-radius: 20px
+                            background: #E3E3E4
+                            border: 1px #211A10 solid
+                            overflow: hidden
+                            .player-pv-bar
+                                width: 100%
+                                height: 100%
+                                border-radius: 20px
+                                background: #1ebe41
+                    .player-pv-text
+                        height: 15px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(45,48,47,1) 10%)
+                        margin-left: 30px
+                        p
+                            font-size: 16px
+                            color: #FFF
+                            -webkit-text-stroke-width: 1px
+                            -webkit-text-stroke-color: black
         .screen-bot
             background-image: url('../assets/image/bg/screen-bot-bg.png')
             height: 250px

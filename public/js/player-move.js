@@ -1,11 +1,13 @@
 // IMPORT
-import { fightGameplay, fightTransition, playerMove, playerMoveScreenTop } from "./instance.js";
+import { arenaArray, fightGameplay, fightGameplayScreenTop, fightTransition, playerMove, playerMoveScreenTop } from "./instance.js";
 import { ftBattleThemeSfx, ftStopRoadThemeSfx } from "./sound.js";
 
 let i = true
 
 // FUNCTION TO START THE FIGHT
 function startFight() {
+    let random = Math.floor(Math.random() * arenaArray.length);
+    fightGameplayScreenTop.style.backgroundImage = arenaArray[random];
     playerMoveScreenTop.classList.add('screen-top-sf');
     setTimeout(() => {
         const element = document.getElementById("player");
