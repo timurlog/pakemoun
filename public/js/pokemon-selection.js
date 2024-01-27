@@ -1,6 +1,8 @@
+// IMPORT
 import { enemyLT, enemyRT, playerLT, playerMove, playerRT, pokemonSelection, pokemonSelectionScreenTop, pokemonSelectionTextBox, teamABtn, teamADisplay, teamBBtn, teamBDisplay } from "./instance.js";
 import { ftRoadThemeSfx, ftStopSelectThemeSfx } from "./sound.js";
 
+// FUNCTION FOR TEAM A SELECTION
 export function teamASelected() {
     teamBDisplay.style.transform = 'scaleY(0)';
     teamABtn.style.display = 'none';
@@ -24,6 +26,7 @@ export function teamASelected() {
     }, 600);
 }
 
+// FUNCTION FOR TEAM B SELECTION
 export function teamBSelected() {
     enemyLT.setAttribute('src', './public/assets/image/pokemon/blaziken-front.gif');
     enemyRT.setAttribute('src', './public/assets/image/pokemon/rayquaza-front.gif');

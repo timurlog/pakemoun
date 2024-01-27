@@ -1,8 +1,10 @@
+// IMPORT
 import { fightGameplay, fightTransition, playerMove, playerMoveScreenTop } from "./instance.js";
 import { ftBattleThemeSfx, ftStopRoadThemeSfx } from "./sound.js";
 
 let i = true
 
+// FUNCTION TO START THE FIGHT
 function startFight() {
     playerMoveScreenTop.classList.add('screen-top-sf');
     setTimeout(() => {
@@ -22,6 +24,7 @@ function startFight() {
     move('right', -100);
 }
 
+// MOVEMENT FUNCTION
 export function movePlayer(evt) {
     const element = document.getElementById("player");
     if (!element.style.left) element.style.left = '970px';
@@ -66,6 +69,7 @@ export function movePlayer(evt) {
     }
 }
 
+// STOP MOVEMENT ANIMATION FUNCTION
 export function stopAnimation(evt) {
     const element = document.getElementById("player");
     element.setAttribute('src', './public/assets/image/player/player-stand.png');
