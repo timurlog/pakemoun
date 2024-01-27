@@ -1,4 +1,26 @@
+import { fightGameplay, fightTransition, playerMove, playerMoveScreenTop } from "./instance.js";
+import { ftBattleThemeSfx, ftStopRoadThemeSfx } from "./sound.js";
+
 let i = true
+
+function startFight() {
+    playerMoveScreenTop.classList.add('screen-top-sf');
+    setTimeout(() => {
+        const element = document.getElementById("player");
+        element.style.display = 'none';
+        playerMoveScreenTop.classList.remove('screen-top-sf');
+        playerMove.style.display = 'none';
+        fightTransition.style.display = 'block';
+        ftStopRoadThemeSfx();
+        ftBattleThemeSfx();
+        setTimeout(() => {
+            fightTransition.style.display = 'none';
+            fightGameplay.style.display = 'block';
+        }, 5000);
+    }, 300);
+    move('left', -100);
+    move('right', -100);
+}
 
 export function movePlayer(evt) {
     const element = document.getElementById("player");
@@ -11,9 +33,6 @@ export function movePlayer(evt) {
 
     switch (evt.keyCode) {
         case 65:
-            if (element.style.left == '690px') {
-                return
-            }
             move('left', -10);
             if (i == true) {
                 element.setAttribute('src', './public/assets/image/player/player-walk-left.gif');
@@ -21,9 +40,6 @@ export function movePlayer(evt) {
             }
             break;
         case 68:
-            if (element.style.left == '1140px') {
-                return
-            }
             move('left', 10);
             if (i == true) {
                 element.setAttribute('src', './public/assets/image/player/player-walk-right.gif');
@@ -31,9 +47,6 @@ export function movePlayer(evt) {
             }
             break;
         case 87:
-            if (element.style.top == '150px') {
-                return
-            }
             move('top', -10);
             if (i == true) {
                 element.setAttribute('src', './public/assets/image/player/player-walk-front.gif');
@@ -41,15 +54,15 @@ export function movePlayer(evt) {
             }
             break;
         case 83:
-            if (element.style.top == '470px') {
-                return
-            }
             move('top', 10);
             if (i == true) {
                 element.setAttribute('src', './public/assets/image/player/player-walk-back.gif');
                 i = false
             }
             break;
+    }
+    if (element.style.left >= '890px' && element.style.left <= '940px' && element.style.top >= '270px' && element.style.top <= '320px') {
+        startFight();
     }
 }
 

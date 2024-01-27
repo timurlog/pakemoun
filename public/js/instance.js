@@ -14,8 +14,16 @@ export let pokemonSelectionScreenTop = document.querySelector('.pokemon-selectio
 
 // PLAYER MOVE
 export let playerMove = document.querySelector('.player-move');
+export let playerMoveScreenTop = document.querySelector('.player-move .screen-top');
+
+// FIGHT TRANSITION
+export let fightTransition = document.querySelector('.fight-transition');
+
+// FIGHT GAMEPLAY
+export let fightGameplay = document.querySelector('.fight-gameplay');
 
 // SFX
 export let buttonSfx = new Audio('./public/assets/music/sfx/button.wav');
 export let selectThemeSfx = new Audio('./public/assets/music/sfx/select-menu-theme.wav');
 export let roadThemeSfx = new Audio('./public/assets/music/sfx/road-music-theme.wav');
+export let battleThemeSfx = new Audio('./public/assets/music/sfx/battle-music-theme.wav');

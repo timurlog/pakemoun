@@ -1,30 +1,23 @@
-/* ### SECTION PLAYER MOVE ### */
-.player-move
+/* ### SECTION FIGHT TRANSITION ### */
+.fight-gameplay
     display: none
     height: 634px
     width: 512px
     box-shadow:  50px 50px 76px #101010, -50px -50px 76px #3e3e3e
-    .pm-content
+    .fg-content
         display: flex
         flex-direction: column
         overflow: hidden
         .screen-top
-            background-image: url('../assets/image/bg/road-bg.png')
+            background-image: url('../assets/image/arena/arena-18.png')
             background-repeat: no-repeat
             background-size: 100%
             width: 100%
             height: 384px
             display: flex
             flex-direction: column
-            justify-content: center
+            justify-content: space-around
             align-items: center
-            img
-                height: 60px
-                position: absolute
-                left: 970px
-                right: 0px
-                top: 460px
-                bottom: 0px
         .screen-bot
             background-image: url('../assets/image/bg/screen-bot-bg.png')
             height: 250px
@@ -40,12 +33,3 @@
                 padding: 7px
                 p
                     color: #FFF
-
-.screen-top-sf
-    animation: bgSFFade 0.3s forwards
-@keyframes bgSFFade
-    0%
-        filter: brightness(1)
-    100%
-        filter: brightness(0)
-

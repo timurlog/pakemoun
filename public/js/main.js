@@ -1,5 +1,5 @@
 import { startBtn, teamABtn, teamBBtn } from "./instance.js";
-import { movePlayer, stopAnimation } from "./move-player-function.js";
+import { movePlayer, stopAnimation } from "./player-move.js";
 import { teamASelected, teamBSelected } from "./pokemon-selection.js";
 import { ftButtonSfx } from "./sound.js";
 import { startMenuDisplayNone } from "./start-menu.js";

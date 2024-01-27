@@ -1,4 +1,4 @@
-import { buttonSfx, roadThemeSfx, selectThemeSfx } from "./instance.js";
+import { battleThemeSfx, buttonSfx, roadThemeSfx, selectThemeSfx } from "./instance.js";
 
 export function ftButtonSfx() {
     buttonSfx.volume = '0.5';
@@ -18,6 +18,17 @@ export function ftStopSelectThemeSfx() {
 
 export function ftRoadThemeSfx() {
     roadThemeSfx.volume = '0.5';
-    selectThemeSfx.loop = true;
+    roadThemeSfx.loop = true;
     roadThemeSfx.play();
+}
+
+export function ftStopRoadThemeSfx() {
+    roadThemeSfx.pause();
+    roadThemeSfx.currentTime = 0;
+}
+
+export function ftBattleThemeSfx() {
+    battleThemeSfx.volume = '0.5';
+    battleThemeSfx.loop = true;
+    battleThemeSfx.play();
 }

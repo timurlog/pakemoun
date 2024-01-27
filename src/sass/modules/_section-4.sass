@@ -1,0 +1,104 @@
+/* ### SECTION FIGHT TRANSITION ### */
+.fight-transition
+    display: none
+    height: 634px
+    width: 512px
+    box-shadow:  50px 50px 76px #101010, -50px -50px 76px #3e3e3e
+    .ft-content
+        display: flex
+        flex-direction: column
+        overflow: hidden
+        .screen-top
+            background-image: url('../assets/image/transition/battle-transition.gif')
+            background-repeat: no-repeat
+            background-size: 100%
+            width: 100%
+            height: 384px
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            animation: fadeTran 5s forwards
+            overflow: hidden
+            .text
+                p
+                    color: #fff
+                    font-size: 60px
+                    animation: textTr 5s forwards
+            .enemy-transition
+                display: flex
+                align-items: center
+                margin-right: 700px
+                animation: enemyTr 5s forwards
+                gap: 40px
+                div
+                    height: 104px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+            @keyframes enemyTr
+                0%
+                    margin-right: 700px
+                25%
+                    margin-right: -300px
+                75%
+                    margin-right: -300px
+                100%
+                    margin-right: -900px
+            .player-transition
+                display: flex
+                align-items: center
+                margin-left: 700px
+                animation: playerTr 5s forwards
+                gap: 40px
+                div
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    height: 104px
+            @keyframes playerTr
+                0%
+                    margin-left: 700px
+                25%
+                    margin-left: -300px
+                75%
+                    margin-left: -300px
+                100%
+                    margin-left: -900px
+        .screen-bot
+            background-image: url('../assets/image/bg/screen-bot-bg.png')
+            height: 250px
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: flex-start
+            .text-box
+                width: 100%
+                height: 100px
+                background: rgba(0, 0, 0, 0.8)
+                border: #D5FFFC solid 2px
+                padding: 7px
+                p
+                    color: #FFF
+
+@keyframes fadeTran
+    0%
+        filter: brightness(1)
+    25%
+        filter: brightness(1)
+    75%
+        filter: brightness(1)
+    100%
+        filter: brightness(0)
+
+@keyframes textTr
+    0%
+        
+    25%
+        
+    75%
+        color: #FFF
+        transform: scale(1)
+    100%
+        color: #000
+        transform: scale(100)
