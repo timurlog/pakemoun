@@ -1147,7 +1147,7 @@ export function enemyRayquazaA4() {
 
 // ENEMY TUNR ATTACK RANDOM
 function enemyTurn(e) {
-    randomAttack = Math.floor(Math.random() * 3);
+    randomAttack = Math.floor(Math.random() * 4);
     switch (e) {
         case gardevoir:
             switch (randomAttack) {
