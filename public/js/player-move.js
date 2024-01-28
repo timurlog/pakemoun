@@ -22,8 +22,6 @@ function startFight() {
             fightGameplay.style.display = 'block';
         }, 5000);
     }, 300);
-    move('left', -100);
-    move('right', -100);
 }
 
 // MOVEMENT FUNCTION
@@ -68,6 +66,8 @@ export function movePlayer(evt) {
     }
     if (element.style.left >= '890px' && element.style.left <= '940px' && element.style.top >= '270px' && element.style.top <= '320px') {
         startFight();
+        move('left', -100);
+        move('right', -100);
     }
 }
 
