@@ -28,6 +28,7 @@ export let playerRT = document.querySelector('#playerRT');
 // FIGHT GAMEPLAY
 export let fightGameplay = document.querySelector('.fight-gameplay');
 export let fightGameplayScreenTop = document.querySelector('.fight-gameplay .screen-top');
+export let fightGameplayTextBox = document.querySelector('.fight-gameplay .text-box p');
 export let playerPokemon = document.querySelector('#playerPokemon');
 export let enemyPokemon = document.querySelector('#enemyPokemon');
 export let playerName = document.querySelector('#playerName');
@@ -35,6 +36,8 @@ export let playerLvl = document.querySelector('#playerLvl');
 export let playerHp = document.querySelector('#playerHp');
 export let enemyName = document.querySelector('#enemyName');
 export let enemyLvl = document.querySelector('#enemyLvl');
+export let enemyHpBar = document.querySelector('.enemy-pv-bar');
+export let playerHpBar = document.querySelector('.player-pv-bar');
 
 // BLAZIKEN ATTACKS
 export let blazikenAttacks = document.querySelector('#blazikenAttacks');
@@ -65,16 +68,35 @@ export let deoxysAttackThreeBtn = document.querySelector('#deoxysAttackThree');
 export let deoxysAttackFourBtn = document.querySelector('#deoxysAttackFour');
 
 //POKEMON
-export let blaziken = new Pokemon("Blaziken", 187, 187, 85, 120, false, 85);
-export let rayquaza = new Pokemon("Rayquaza", 414, 414, 120, 90, 80, 120);
-export let gardevoir = new Pokemon("Gardevoir", 175, 175, 90, 120, false, 95);
-export let deoxys = new Pokemon("Deoxys", 304, 304, 140, 120, 120, 150);
+export let blaziken = new Pokemon("Blaziken", 467, 467, 85, 120, false, 85);
+export let rayquaza = new Pokemon("Rayquaza", 1035, 1035, 120, 90, 80, 120);
+export let gardevoir = new Pokemon("Gardevoir", 437, 437, 90, 120, false, 95);
+export let deoxys = new Pokemon("Deoxys", 760, 760, 140, 120, 120, 150);
 
 // SFX
 export let buttonSfx = new Audio('./public/assets/music/sfx/button.wav');
+export let teamButtonSfx = new Audio('./public/assets/music/sfx/team-button.wav');
 export let selectThemeSfx = new Audio('./public/assets/music/sfx/select-menu-theme.wav');
 export let roadThemeSfx = new Audio('./public/assets/music/sfx/road-music-theme.wav');
 export let battleThemeSfx = new Audio('./public/assets/music/sfx/battle-music-theme.wav');
+
+// POKEMON SFX
+export let blazeKickSfx = new Audio('./public/assets/music/pokemon-sfx/blaze-kick.wav');
+export let flareBlitzSfx = new Audio('./public/assets/music/pokemon-sfx/flare-blitz.wav');
+export let bulkUpSfx = new Audio('./public/assets/music/pokemon-sfx/bulk-up.wav');
+export let bounceSfx = new Audio('./public/assets/music/pokemon-sfx/bounce.wav');
+export let psychicSfx = new Audio('./public/assets/music/pokemon-sfx/psychic.wav');
+export let doubleEdgeSfx = new Audio('./public/assets/music/pokemon-sfx/double-edge.wav');
+export let calmMindSfx = new Audio('./public/assets/music/pokemon-sfx/calm-mind.wav');
+export let thunderboltSfx = new Audio('./public/assets/music/pokemon-sfx/thunderbolt.wav');
+export let psychoBoostSfx = new Audio('./public/assets/music/pokemon-sfx/psycho-boost.wav');
+export let solarBeamSfx = new Audio('./public/assets/music/pokemon-sfx/solar-beam.wav');
+export let megaKickSfx = new Audio('./public/assets/music/pokemon-sfx/mega-kick.wav');
+export let hyperBeamSfx = new Audio('./public/assets/music/pokemon-sfx/hyper-beam.wav');
+export let dragonAscentSfx = new Audio('./public/assets/music/pokemon-sfx/dragon-ascent.wav');
+export let dragonPulseSfx = new Audio('./public/assets/music/pokemon-sfx/dragon-pulse.wav');
+export let extremeSpeedSfx = new Audio('./public/assets/music/pokemon-sfx/extreme-speed.wav');
+export let fireBlastSfx = new Audio('./public/assets/music/pokemon-sfx/fire-blast.wav');
 
 // ARENA
 export let arenaArray = [
