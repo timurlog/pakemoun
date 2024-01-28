@@ -61,7 +61,7 @@ export function enemyGardevoirA1() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -131,7 +131,7 @@ export function enemyGardevoirA2() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -231,7 +231,7 @@ export function enemyGardevoirA4() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -301,7 +301,7 @@ export function enemyDeoxysA1() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -379,7 +379,7 @@ export function enemyDeoxysA2() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -457,7 +457,7 @@ export function enemyDeoxysA3() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -535,7 +535,7 @@ export function enemyDeoxysA4() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -613,7 +613,7 @@ export function enemyBlazikenA1() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -683,7 +683,7 @@ export function enemyBlazikenA2() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -783,7 +783,7 @@ export function enemyBlazikenA4() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -853,7 +853,7 @@ export function enemyRayquazaA1() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -931,7 +931,7 @@ export function enemyRayquazaA2() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -1009,7 +1009,7 @@ export function enemyRayquazaA3() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -1087,7 +1087,7 @@ export function enemyRayquazaA4() {
                 }
                 playerHpBar.style.transition = 'all 0.3s ease';
                 playerHpBar.style.width = playerHpPercent + '%';
-                if (playerHpPercent <= 50 && playerHpPercent > 15) {
+                if (playerHpPercent <= 50 && playerHpPercent > 25) {
                     playerHpBar.style.background = '#DF8400'
                 }
                 else if (playerHpPercent <= 25) {
@@ -1237,7 +1237,7 @@ export function playerBlazikenA1() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -1293,7 +1293,7 @@ export function playerBlazikenA2() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -1372,7 +1372,7 @@ export function playerBlazikenA4() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -1428,7 +1428,7 @@ export function playerRayquazaA1() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -1492,7 +1492,7 @@ export function playerRayquazaA2() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -1556,7 +1556,7 @@ export function playerRayquazaA3() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -1620,7 +1620,7 @@ export function playerRayquazaA4() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -1684,7 +1684,7 @@ export function playerGardevoirA1() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -1740,7 +1740,7 @@ export function playerGardevoirA2() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -1819,7 +1819,7 @@ export function playerGardevoirA4() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -1876,7 +1876,7 @@ export function playerDeoxysA1() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -1940,7 +1940,7 @@ export function playerDeoxysA2() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -2004,7 +2004,7 @@ export function playerDeoxysA3() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
@@ -2068,7 +2068,7 @@ export function playerDeoxysA4() {
                 }
                 enemyHpBar.style.transition = 'all 0.3s ease';
                 enemyHpBar.style.width = enemyHpPercent + '%';
-                if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
+                if (enemyHpPercent <= 50 && enemyHpPercent > 25) {
                     enemyHpBar.style.background = '#DF8400'
                 }
                 else if (enemyHpPercent <= 25) {
