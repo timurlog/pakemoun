@@ -17,6 +17,7 @@ export let pokemonSelectionScreenTop = document.querySelector('.pokemon-selectio
 // PLAYER MOVE
 export let playerMove = document.querySelector('.player-move');
 export let playerMoveScreenTop = document.querySelector('.player-move .screen-top');
+export let goToBattleBtn = document.querySelector('#goToBattle');
 
 // FIGHT TRANSITION
 export let fightTransition = document.querySelector('.fight-transition');

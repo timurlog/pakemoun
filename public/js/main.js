@@ -1,7 +1,7 @@
 // IMPORT
 import { playerBlazikenA1, playerBlazikenA2, playerBlazikenA3, playerBlazikenA4, playerDeoxysA1, playerDeoxysA2, playerDeoxysA3, playerDeoxysA4, playerGardevoirA1, playerGardevoirA2, playerGardevoirA3, playerGardevoirA4, playerRayquazaA1, playerRayquazaA2, playerRayquazaA3, playerRayquazaA4 } from "./fight-gameplay.js";
-import { blazikenAttackFourBtn, blazikenAttackOneBtn, blazikenAttackThreeBtn, blazikenAttackTwoBtn, deoxysAttackFourBtn, deoxysAttackOneBtn, deoxysAttackThreeBtn, deoxysAttackTwoBtn, gardevoirAttackFourBtn, gardevoirAttackOneBtn, gardevoirAttackThreeBtn, gardevoirAttackTwoBtn, losePlayAgainBtn, rayquazaAttackFourBtn, rayquazaAttackOneBtn, rayquazaAttackThreeBtn, rayquazaAttackTwoBtn, startBtn, teamABtn, teamBBtn, winPlayAgainBtn } from "./instance.js";
-import { movePlayer, stopAnimation } from "./player-move.js";
+import { blazikenAttackFourBtn, blazikenAttackOneBtn, blazikenAttackThreeBtn, blazikenAttackTwoBtn, deoxysAttackFourBtn, deoxysAttackOneBtn, deoxysAttackThreeBtn, deoxysAttackTwoBtn, gardevoirAttackFourBtn, gardevoirAttackOneBtn, gardevoirAttackThreeBtn, gardevoirAttackTwoBtn, goToBattleBtn, losePlayAgainBtn, rayquazaAttackFourBtn, rayquazaAttackOneBtn, rayquazaAttackThreeBtn, rayquazaAttackTwoBtn, startBtn, teamABtn, teamBBtn, winPlayAgainBtn } from "./instance.js";
+import { movePlayer, startFight, stopAnimation } from "./player-move.js";
 import { teamASelected, teamBSelected } from "./pokemon-selection.js";
 import { ftButtonSfx, ftTeamButtonSfx } from "./sound.js";
 import { startMenuDisplayNone } from "./start-menu.js";
@@ -125,3 +125,7 @@ losePlayAgainBtn.addEventListener('click', () => {
 // PLAYER MOVE
 window.addEventListener('keydown', movePlayer);
 window.addEventListener('keyup', stopAnimation);
+goToBattleBtn.addEventListener('click', () => {
+    ftButtonSfx();
+    startFight();
+})

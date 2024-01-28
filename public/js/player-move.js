@@ -5,7 +5,7 @@ import { ftBattleThemeSfx, ftStopRoadThemeSfx } from "./sound.js";
 let i = true
 
 // FUNCTION TO START THE FIGHT
-function startFight() {
+export function startFight() {
     let random = Math.floor(Math.random() * arenaArray.length);
     fightGameplayScreenTop.style.backgroundImage = arenaArray[random];
     playerMoveScreenTop.classList.add('screen-top-sf');
