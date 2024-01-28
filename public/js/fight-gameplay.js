@@ -80,6 +80,7 @@ export function enemyGardevoirA1() {
                     if (playerActivePokemon.hp <= 0) {
                         playerPokemon.style.transition = 'all 1s ease';
                         playerPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `${blaziken.name} fainted!`
                         setTimeout(() => {
                             playerPokemon.setAttribute('src', './public/assets/image/pokemon/rayquaza-back.gif');
                             playerPokemon.style.transition = '';
@@ -149,6 +150,7 @@ export function enemyGardevoirA2() {
                     if (playerActivePokemon.hp <= 0) {
                         playerPokemon.style.transition = 'all 1s ease';
                         playerPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `${blaziken.name} fainted!`
                         setTimeout(() => {
                             playerPokemon.setAttribute('src', './public/assets/image/pokemon/rayquaza-back.gif');
                             playerPokemon.style.transition = '';
@@ -248,6 +250,7 @@ export function enemyGardevoirA4() {
                     if (playerActivePokemon.hp <= 0) {
                         playerPokemon.style.transition = 'all 1s ease';
                         playerPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `${blaziken.name} fainted!`
                         setTimeout(() => {
                             playerPokemon.setAttribute('src', './public/assets/image/pokemon/rayquaza-back.gif');
                             playerPokemon.style.transition = '';
@@ -317,6 +320,7 @@ export function enemyDeoxysA1() {
                     if (playerActivePokemon.hp <= 0) {
                         playerPokemon.style.transition = 'all 1s ease';
                         playerPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `${playerActivePokemon.name} fainted!`
                         setTimeout(() => {
                             if (playerActivePokemon == blaziken) {
                                 playerPokemon.setAttribute('src', './public/assets/image/pokemon/rayquaza-back.gif');
@@ -391,6 +395,7 @@ export function enemyDeoxysA2() {
                     if (playerActivePokemon.hp <= 0) {
                         playerPokemon.style.transition = 'all 1s ease';
                         playerPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `${playerActivePokemon.name} fainted!`
                         setTimeout(() => {
                             if (playerActivePokemon == blaziken) {
                                 playerPokemon.setAttribute('src', './public/assets/image/pokemon/rayquaza-back.gif');
@@ -465,6 +470,7 @@ export function enemyDeoxysA3() {
                     if (playerActivePokemon.hp <= 0) {
                         playerPokemon.style.transition = 'all 1s ease';
                         playerPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `${playerActivePokemon.name} fainted!`
                         setTimeout(() => {
                             if (playerActivePokemon == blaziken) {
                                 playerPokemon.setAttribute('src', './public/assets/image/pokemon/rayquaza-back.gif');
@@ -539,6 +545,7 @@ export function enemyDeoxysA4() {
                     if (playerActivePokemon.hp <= 0) {
                         playerPokemon.style.transition = 'all 1s ease';
                         playerPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `${playerActivePokemon.name} fainted!`
                         setTimeout(() => {
                             if (playerActivePokemon == blaziken) {
                                 playerPokemon.setAttribute('src', './public/assets/image/pokemon/rayquaza-back.gif');
@@ -653,6 +660,7 @@ export function playerBlazikenA1() {
                     if (enemyActivePokemon.hp <= 0) {
                         enemyPokemon.style.transition = 'all 1s ease';
                         enemyPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `The foe's ${enemyActivePokemon.name} fainted!`
                         setTimeout(() => {
                             enemyPokemon.setAttribute('src', './public/assets/image/pokemon/deoxys-front.gif');
                             enemyPokemon.style.transition = '';
@@ -708,6 +716,7 @@ export function playerBlazikenA2() {
                     if (enemyActivePokemon.hp <= 0) {
                         enemyPokemon.style.transition = 'all 1s ease';
                         enemyPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `The foe's ${enemyActivePokemon.name} fainted!`
                         setTimeout(() => {
                             enemyPokemon.setAttribute('src', './public/assets/image/pokemon/deoxys-front.gif');
                             enemyPokemon.style.transition = '';
@@ -786,6 +795,7 @@ export function playerBlazikenA4() {
                     if (enemyActivePokemon.hp <= 0) {
                         enemyPokemon.style.transition = 'all 1s ease';
                         enemyPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `The foe's ${enemyActivePokemon.name} fainted!`
                         setTimeout(() => {
                             enemyPokemon.setAttribute('src', './public/assets/image/pokemon/deoxys-front.gif');
                             enemyPokemon.style.transition = '';
@@ -841,6 +851,7 @@ export function playerRayquazaA1() {
                     if (enemyActivePokemon.hp <= 0) {
                         enemyPokemon.style.transition = 'all 1s ease';
                         enemyPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `The foe's ${enemyActivePokemon.name} fainted!`
                         setTimeout(() => {
                             if (enemyActivePokemon == gardevoir) {
                                 enemyPokemon.setAttribute('src', './public/assets/image/pokemon/deoxys-front.gif');
@@ -901,6 +912,7 @@ export function playerRayquazaA2() {
                     if (enemyActivePokemon.hp <= 0) {
                         enemyPokemon.style.transition = 'all 1s ease';
                         enemyPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `The foe's ${enemyActivePokemon.name} fainted!`
                         setTimeout(() => {
                             if (enemyActivePokemon == gardevoir) {
                                 enemyPokemon.setAttribute('src', './public/assets/image/pokemon/deoxys-front.gif');
@@ -961,6 +973,7 @@ export function playerRayquazaA3() {
                     if (enemyActivePokemon.hp <= 0) {
                         enemyPokemon.style.transition = 'all 1s ease';
                         enemyPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `The foe's ${enemyActivePokemon.name} fainted!`
                         setTimeout(() => {
                             if (enemyActivePokemon == gardevoir) {
                                 enemyPokemon.setAttribute('src', './public/assets/image/pokemon/deoxys-front.gif');
@@ -1021,6 +1034,7 @@ export function playerRayquazaA4() {
                     if (enemyActivePokemon.hp <= 0) {
                         enemyPokemon.style.transition = 'all 1s ease';
                         enemyPokemon.style.transform = 'scale(0)';
+                        fightGameplayTextBox.innerHTML = `The foe's ${enemyActivePokemon.name} fainted!`
                         setTimeout(() => {
                             if (enemyActivePokemon == gardevoir) {
                                 enemyPokemon.setAttribute('src', './public/assets/image/pokemon/deoxys-front.gif');
