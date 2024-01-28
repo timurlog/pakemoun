@@ -1,6 +1,6 @@
 // IMPORT
-import { blaziken, blazikenAttacks, deoxys, deoxysAttacks, enemyHpBar, enemyPokemon, fightGameplayTextBox, gardevoir, gardevoirAttacks, playerHp, playerHpBar, playerLvl, playerName, playerPokemon, rayquaza, rayquazaAttacks } from "./instance.js";
-import { ftBlazeKickSfx, ftBounceSfx, ftBulkUpSfx, ftCalmMindSfx, ftDoubleEdgeSfx, ftDragonAscentSfx, ftDragonPulseSfx, ftExtremeSpeedSfx, ftFireBlastSfx, ftFlareBlitzSfx, ftHyperBeamSfx, ftMegaKickSfx, ftPsychicSfx, ftPsychoBoostSfx, ftSolarBeamSfx, ftThunderboltSfx } from "./sound.js";
+import { blaziken, blazikenAttacks, deoxys, enemyHpBar, enemyPokemon, fightGameplay, fightGameplayTextBox, gardevoir, loseScreen, playerHp, playerHpBar, playerLvl, playerName, playerPokemon, rayquaza, rayquazaAttacks, winScreen } from "./instance.js";
+import { ftBlazeKickSfx, ftBounceSfx, ftBulkUpSfx, ftCalmMindSfx, ftDoubleEdgeSfx, ftDragonAscentSfx, ftDragonPulseSfx, ftExtremeSpeedSfx, ftFireBlastSfx, ftFlareBlitzSfx, ftHyperBeamSfx, ftMegaKickSfx, ftPsychicSfx, ftPsychoBoostSfx, ftSelectThemeSfx, ftSolarBeamSfx, ftStopBattleThemeSfx, ftThunderboltSfx, ftVictoryThemeSfx } from "./sound.js";
 
 // ACTIVE POKEMON
 let playerActivePokemon;
@@ -64,7 +64,7 @@ export function enemyGardevoirA1() {
                 if (playerHpPercent <= 50 && playerHpPercent > 15) {
                     playerHpBar.style.background = '#DF8400'
                 }
-                else if (playerHpPercent <= 15) {
+                else if (playerHpPercent <= 25) {
                     playerHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -134,7 +134,7 @@ export function enemyGardevoirA2() {
                 if (playerHpPercent <= 50 && playerHpPercent > 15) {
                     playerHpBar.style.background = '#DF8400'
                 }
-                else if (playerHpPercent <= 15) {
+                else if (playerHpPercent <= 25) {
                     playerHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -234,7 +234,7 @@ export function enemyGardevoirA4() {
                 if (playerHpPercent <= 50 && playerHpPercent > 15) {
                     playerHpBar.style.background = '#DF8400'
                 }
-                else if (playerHpPercent <= 15) {
+                else if (playerHpPercent <= 25) {
                     playerHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -304,7 +304,7 @@ export function enemyDeoxysA1() {
                 if (playerHpPercent <= 50 && playerHpPercent > 15) {
                     playerHpBar.style.background = '#DF8400'
                 }
-                else if (playerHpPercent <= 15) {
+                else if (playerHpPercent <= 25) {
                     playerHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -335,7 +335,10 @@ export function enemyDeoxysA1() {
                                 fightGameplayTextBox.innerHTML = `What will ${rayquaza.name} do?`
                             }
                             else {
-                                console.log('lose');
+                                ftStopBattleThemeSfx();
+                                ftSelectThemeSfx();
+                                fightGameplay.style.display = 'none';
+                                loseScreen.style.display = 'block';
                             }
                         }, 1000);
                     }
@@ -379,7 +382,7 @@ export function enemyDeoxysA2() {
                 if (playerHpPercent <= 50 && playerHpPercent > 15) {
                     playerHpBar.style.background = '#DF8400'
                 }
-                else if (playerHpPercent <= 15) {
+                else if (playerHpPercent <= 25) {
                     playerHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -410,7 +413,10 @@ export function enemyDeoxysA2() {
                                 fightGameplayTextBox.innerHTML = `What will ${rayquaza.name} do?`
                             }
                             else {
-                                console.log('lose');
+                                ftStopBattleThemeSfx();
+                                ftSelectThemeSfx();
+                                fightGameplay.style.display = 'none';
+                                loseScreen.style.display = 'block';
                             }
                         }, 1000);
                     }
@@ -454,7 +460,7 @@ export function enemyDeoxysA3() {
                 if (playerHpPercent <= 50 && playerHpPercent > 15) {
                     playerHpBar.style.background = '#DF8400'
                 }
-                else if (playerHpPercent <= 15) {
+                else if (playerHpPercent <= 25) {
                     playerHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -485,7 +491,10 @@ export function enemyDeoxysA3() {
                                 fightGameplayTextBox.innerHTML = `What will ${rayquaza.name} do?`
                             }
                             else {
-                                console.log('lose');
+                                ftStopBattleThemeSfx();
+                                ftSelectThemeSfx();
+                                fightGameplay.style.display = 'none';
+                                loseScreen.style.display = 'block';
                             }
                         }, 1000);
                     }
@@ -529,7 +538,7 @@ export function enemyDeoxysA4() {
                 if (playerHpPercent <= 50 && playerHpPercent > 15) {
                     playerHpBar.style.background = '#DF8400'
                 }
-                else if (playerHpPercent <= 15) {
+                else if (playerHpPercent <= 25) {
                     playerHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -560,7 +569,10 @@ export function enemyDeoxysA4() {
                                 fightGameplayTextBox.innerHTML = `What will ${rayquaza.name} do?`
                             }
                             else {
-                                console.log('lose');
+                                ftStopBattleThemeSfx();
+                                ftSelectThemeSfx();
+                                fightGameplay.style.display = 'none';
+                                loseScreen.style.display = 'block';
                             }
                         }, 1000);
                     }
@@ -650,7 +662,7 @@ export function playerBlazikenA1() {
                 if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
                     enemyHpBar.style.background = '#DF8400'
                 }
-                else if (enemyHpPercent <= 15) {
+                else if (enemyHpPercent <= 25) {
                     enemyHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -706,7 +718,7 @@ export function playerBlazikenA2() {
                 if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
                     enemyHpBar.style.background = '#DF8400'
                 }
-                else if (enemyHpPercent <= 15) {
+                else if (enemyHpPercent <= 25) {
                     enemyHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -785,7 +797,7 @@ export function playerBlazikenA4() {
                 if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
                     enemyHpBar.style.background = '#DF8400'
                 }
-                else if (enemyHpPercent <= 15) {
+                else if (enemyHpPercent <= 25) {
                     enemyHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -841,7 +853,7 @@ export function playerRayquazaA1() {
                 if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
                     enemyHpBar.style.background = '#DF8400'
                 }
-                else if (enemyHpPercent <= 15) {
+                else if (enemyHpPercent <= 25) {
                     enemyHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -865,7 +877,10 @@ export function playerRayquazaA1() {
                                 fightGameplayTextBox.innerHTML = `What will ${rayquaza.name} do?`
                             }
                             else {
-                                console.log('you win');
+                                ftStopBattleThemeSfx();
+                                ftVictoryThemeSfx();
+                                fightGameplay.style.display = 'none';
+                                winScreen.style.display = 'block';
                             }
                         }, 1000);
                     }
@@ -902,7 +917,7 @@ export function playerRayquazaA2() {
                 if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
                     enemyHpBar.style.background = '#DF8400'
                 }
-                else if (enemyHpPercent <= 15) {
+                else if (enemyHpPercent <= 25) {
                     enemyHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -926,7 +941,10 @@ export function playerRayquazaA2() {
                                 fightGameplayTextBox.innerHTML = `What will ${rayquaza.name} do?`
                             }
                             else {
-                                console.log('you win');
+                                ftStopBattleThemeSfx();
+                                ftVictoryThemeSfx();
+                                fightGameplay.style.display = 'none';
+                                winScreen.style.display = 'block';
                             }
                         }, 1000);
                     }
@@ -963,7 +981,7 @@ export function playerRayquazaA3() {
                 if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
                     enemyHpBar.style.background = '#DF8400'
                 }
-                else if (enemyHpPercent <= 15) {
+                else if (enemyHpPercent <= 25) {
                     enemyHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -987,7 +1005,10 @@ export function playerRayquazaA3() {
                                 fightGameplayTextBox.innerHTML = `What will ${rayquaza.name} do?`
                             }
                             else {
-                                console.log('you win');
+                                ftStopBattleThemeSfx();
+                                ftVictoryThemeSfx();
+                                fightGameplay.style.display = 'none';
+                                winScreen.style.display = 'block';
                             }
                         }, 1000);
                     }
@@ -1024,7 +1045,7 @@ export function playerRayquazaA4() {
                 if (enemyHpPercent <= 50 && enemyHpPercent > 15) {
                     enemyHpBar.style.background = '#DF8400'
                 }
-                else if (enemyHpPercent <= 15) {
+                else if (enemyHpPercent <= 25) {
                     enemyHpBar.style.background = '#FF556F'
                 }
                 else {
@@ -1048,7 +1069,10 @@ export function playerRayquazaA4() {
                                 fightGameplayTextBox.innerHTML = `What will ${rayquaza.name} do?`
                             }
                             else {
-                                console.log('you win');
+                                ftStopBattleThemeSfx();
+                                ftVictoryThemeSfx();
+                                fightGameplay.style.display = 'none';
+                                winScreen.style.display = 'block';
                             }
                         }, 1000);
                     }

@@ -1,6 +1,6 @@
 // IMPORT
-import { enemyActive, playerBlazikenA1, playerBlazikenA2, playerBlazikenA3, playerBlazikenA4, playerRayquazaA1, playerRayquazaA2, playerRayquazaA3, playerRayquazaA4 } from "./fight-gameplay.js";
-import { blazikenAttackFourBtn, blazikenAttackOneBtn, blazikenAttackThreeBtn, blazikenAttackTwoBtn, rayquazaAttackFourBtn, rayquazaAttackOneBtn, rayquazaAttackThreeBtn, rayquazaAttackTwoBtn, startBtn, teamABtn, teamBBtn } from "./instance.js";
+import { playerBlazikenA1, playerBlazikenA2, playerBlazikenA3, playerBlazikenA4, playerRayquazaA1, playerRayquazaA2, playerRayquazaA3, playerRayquazaA4 } from "./fight-gameplay.js";
+import { blazikenAttackFourBtn, blazikenAttackOneBtn, blazikenAttackThreeBtn, blazikenAttackTwoBtn, losePlayAgainBtn, rayquazaAttackFourBtn, rayquazaAttackOneBtn, rayquazaAttackThreeBtn, rayquazaAttackTwoBtn, startBtn, teamABtn, teamBBtn, winPlayAgainBtn } from "./instance.js";
 import { movePlayer, stopAnimation } from "./player-move.js";
 import { teamASelected, teamBSelected } from "./pokemon-selection.js";
 import { ftButtonSfx, ftTeamButtonSfx } from "./sound.js";
@@ -63,6 +63,21 @@ rayquazaAttackThreeBtn.addEventListener('click', () => {
 rayquazaAttackFourBtn.addEventListener('click', () => {
     ftButtonSfx();
     playerRayquazaA4();
+});
+
+// PLAY AGAIN
+winPlayAgainBtn.addEventListener('click', () => {
+    ftButtonSfx();
+    setTimeout(() => {
+        location.reload();
+    }, 600);
+});
+
+losePlayAgainBtn.addEventListener('click', () => {
+    ftButtonSfx();
+    setTimeout(() => {
+        location.reload();
+    }, 600);
 });
 
 // PLAYER MOVE

@@ -39,6 +39,12 @@ export let enemyLvl = document.querySelector('#enemyLvl');
 export let enemyHpBar = document.querySelector('.enemy-pv-bar');
 export let playerHpBar = document.querySelector('.player-pv-bar');
 
+// WIN / LOSE
+export let winScreen = document.querySelector('.win');
+export let loseScreen = document.querySelector('.lose');
+export let winPlayAgainBtn = document.querySelector('#winPlayAgain');
+export let losePlayAgainBtn = document.querySelector('#losePlayAgain');
+
 // BLAZIKEN ATTACKS
 export let blazikenAttacks = document.querySelector('#blazikenAttacks');
 export let blazikenAttackOneBtn = document.querySelector('#blazikenAttackOne');
@@ -79,6 +85,7 @@ export let teamButtonSfx = new Audio('./public/assets/music/sfx/team-button.wav'
 export let selectThemeSfx = new Audio('./public/assets/music/sfx/select-menu-theme.wav');
 export let roadThemeSfx = new Audio('./public/assets/music/sfx/road-music-theme.wav');
 export let battleThemeSfx = new Audio('./public/assets/music/sfx/battle-music-theme.wav');
+export let victoryThemeSfx = new Audio('./public/assets/music/sfx/victory-music-theme.wav');
 
 // POKEMON SFX
 export let blazeKickSfx = new Audio('./public/assets/music/pokemon-sfx/blaze-kick.wav');

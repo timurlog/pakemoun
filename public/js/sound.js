@@ -1,5 +1,5 @@
 // IMPORT
-import { battleThemeSfx, blazeKickSfx, bounceSfx, bulkUpSfx, buttonSfx, calmMindSfx, doubleEdgeSfx, dragonAscentSfx, dragonPulseSfx, extremeSpeedSfx, fireBlastSfx, flareBlitzSfx, hyperBeamSfx, megaKickSfx, psychicSfx, psychoBoostSfx, roadThemeSfx, selectThemeSfx, solarBeamSfx, teamButtonSfx, thunderboltSfx } from "./instance.js";
+import { battleThemeSfx, blazeKickSfx, bounceSfx, bulkUpSfx, buttonSfx, calmMindSfx, doubleEdgeSfx, dragonAscentSfx, dragonPulseSfx, extremeSpeedSfx, fireBlastSfx, flareBlitzSfx, hyperBeamSfx, megaKickSfx, psychicSfx, psychoBoostSfx, roadThemeSfx, selectThemeSfx, solarBeamSfx, teamButtonSfx, thunderboltSfx, victoryThemeSfx } from "./instance.js";
 
 // BUTTON CLIC SOUND FX
 export function ftButtonSfx() {
@@ -42,6 +42,23 @@ export function ftBattleThemeSfx() {
     battleThemeSfx.volume = '0.3';
     battleThemeSfx.loop = true;
     battleThemeSfx.play();
+}
+
+export function ftStopBattleThemeSfx() {
+    battleThemeSfx.pause();
+    battleThemeSfx.currentTime = 0;
+}
+
+// VICTORY THEME SOUND FX
+export function ftVictoryThemeSfx() {
+    victoryThemeSfx.volume = '0.3';
+    victoryThemeSfx.loop = false;
+    victoryThemeSfx.play();
+}
+
+export function ftStopVictoryThemeSfx() {
+    victoryThemeSfx.pause();
+    victoryThemeSfx.currentTime = 0;
 }
 
 // POKEMON SFX
