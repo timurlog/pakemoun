@@ -28,6 +28,13 @@ export let playerRT = document.querySelector('#playerRT');
 // FIGHT GAMEPLAY
 export let fightGameplay = document.querySelector('.fight-gameplay');
 export let fightGameplayScreenTop = document.querySelector('.fight-gameplay .screen-top');
+export let playerPokemon = document.querySelector('#playerPokemon');
+export let enemyPokemon = document.querySelector('#enemyPokemon');
+export let playerName = document.querySelector('#playerName');
+export let playerLvl = document.querySelector('#playerLvl');
+export let playerHp = document.querySelector('#playerHp');
+export let enemyName = document.querySelector('#enemyName');
+export let enemyLvl = document.querySelector('#enemyLvl');
 
 // BLAZIKEN ATTACKS
 export let blazikenAttacks = document.querySelector('#blazikenAttacks');

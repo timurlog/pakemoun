@@ -1,9 +1,17 @@
 // IMPORT
-import { enemyLT, enemyRT, playerLT, playerMove, playerRT, pokemonSelection, pokemonSelectionScreenTop, pokemonSelectionTextBox, teamABtn, teamADisplay, teamBBtn, teamBDisplay } from "./instance.js";
+import { blaziken, blazikenAttacks, enemyLT, enemyLvl, enemyName, enemyPokemon, enemyRT, gardevoir, gardevoirAttacks, playerHp, playerLT, playerLvl, playerMove, playerName, playerPokemon, playerRT, pokemonSelection, pokemonSelectionScreenTop, pokemonSelectionTextBox, teamABtn, teamADisplay, teamBBtn, teamBDisplay } from "./instance.js";
 import { ftRoadThemeSfx, ftStopSelectThemeSfx } from "./sound.js";
 
 // FUNCTION FOR TEAM A SELECTION
 export function teamASelected() {
+    playerPokemon.setAttribute('src', './public/assets/image/pokemon/blaziken-back.gif');
+    enemyPokemon.setAttribute('src', './public/assets/image/pokemon/gardevoir-front.gif');
+    blazikenAttacks.style.display = 'grid';
+    playerName.innerHTML = blaziken.name;
+    enemyName.innerHTML = gardevoir.name;
+    playerLvl.innerHTML = "<span>Lv.</span>50";
+    enemyLvl.innerHTML = "<span>Lv.</span>50";
+    playerHp.innerHTML = `${blaziken.hp}/${blaziken.hpMax}`;
     teamBDisplay.style.transform = 'scaleY(0)';
     teamABtn.style.display = 'none';
     teamBBtn.style.display = 'none';
@@ -28,6 +36,14 @@ export function teamASelected() {
 
 // FUNCTION FOR TEAM B SELECTION
 export function teamBSelected() {
+    playerPokemon.setAttribute('src', './public/assets/image/pokemon/gardevoir-back.gif');
+    enemyPokemon.setAttribute('src', './public/assets/image/pokemon/blaziken-front.gif');
+    gardevoirAttacks.style.display = 'grid';
+    playerName.innerHTML = gardevoir.name;
+    enemyName.innerHTML = blaziken.name;
+    playerLvl.innerHTML = "<span>Lv.</span>50";
+    enemyLvl.innerHTML = "<span>Lv.</span>50";
+    playerHp.innerHTML = `${gardevoir.hp}/${gardevoir.hpMax}`;
     enemyLT.setAttribute('src', './public/assets/image/pokemon/blaziken-front.gif');
     enemyRT.setAttribute('src', './public/assets/image/pokemon/rayquaza-front.gif');
     playerLT.setAttribute('src', './public/assets/image/pokemon/deoxys-back.gif');
