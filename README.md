@@ -22,8 +22,8 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<!-- [![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
 
@@ -34,15 +34,15 @@
     <img src="./public/assets/image/favicon.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Pakemoun</h3>
 
   <p align="center">
-    project_description
+    Pokemon like, MolenGeek project
     <br />
     <a href="https://github.com/timurlog/pakemoun"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/timurlog/pakemoun">View Demo</a>
+    <a href="https://timurlog.github.io/pakemoun/">View Demo</a>
     ·
     <a href="https://github.com/timurlog/pakemoun/issues">Report Bug</a>
     ·
@@ -62,19 +62,19 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
+    <!-- <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
+    </li> -->
+    <!-- <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#license">License</a></li> -->
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ol>
 </details>
 
@@ -83,9 +83,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `timurlog`, `pakemoun`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `timurlog`, `pakemoun`, `@timur_log`, `Pakemoun`, `Pokemon like, MolenGeek project`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,11 +93,14 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
+HTML
+SASS
+JS
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- GETTING STARTED -->
+<!-- GETTING STARTED
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
@@ -128,22 +131,22 @@ This is an example of how to list things you need to use the software and how to
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+ -->
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+<!-- ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+ -->
 
 
 <!-- ROADMAP -->
-## Roadmap
+<!-- ## Roadmap
 
 - [ ] Feature 1
 - [ ] Feature 2
@@ -153,11 +156,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 See the [open issues](https://github.com/timurlog/pakemoun/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+ -->
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+<!-- ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -171,22 +174,22 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+ -->
 
 
 <!-- LICENSE -->
-## License
+<!-- ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+ -->
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@twitter_handle](https://twitter.com/timur_log)
 
 Project Link: [https://github.com/timurlog/pakemoun](https://github.com/timurlog/pakemoun)
 
@@ -195,13 +198,13 @@ Project Link: [https://github.com/timurlog/pakemoun](https://github.com/timurlog
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+<!-- ## Acknowledgments
 
 * []()
 * []()
 * []()
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
